@@ -1,0 +1,34 @@
+p {
+  color: green;
+  border: 1px solid green;
+  padding: 10px; }
+
+.naslov h1 {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid gray;
+  color: blue;
+  padding: 5px; }
+  .naslov h1 span {
+    color: red; }
+  @media screen and (max-width: 801px) {
+    .naslov h1 {
+      color: green;
+      font-size: 15px;
+      font-weight: bold; } }
+@media screen and (max-width: 810px) {
+  .naslov {
+    color: green;
+    font-size: 14px; } }
+@media screen and (max-width: 1200px) {
+  .naslov {
+    color: aqua;
+    font-size: 10px; } }
+
+h2 {
+  color: #000; }
+  h2 span {
+    color: green; }
+
+/*# sourceMappingURL=style.css.map */

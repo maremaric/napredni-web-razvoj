@@ -1,0 +1,41 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "extends.scss";
+
+.naslov {
+  h1 {
+    @include shadow(10px) {
+    }
+
+    span {
+      color: red;
+    }
+    @include responsive(medium-screen) {
+      color: green;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: $width-medium + 10) {
+    color: green;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $width-large) {
+    color: aqua;
+    font-size: 10px;
+  }
+}
+
+h2 {
+  color: #000;
+
+  span {
+    color: green;
+  }
+}
+
+p {
+  @extend %success;
+}

@@ -1,0 +1,30 @@
+@mixin gradient($prvaBoja: blue, $drugaBoja: green) {
+  background: $prvaBoja;
+  background: -moz-linear-gradient(
+    top,
+    $prvaBoja 0%,
+    $prvaBoja 50%,
+    $prvaBoja 51%,
+    $prvaBoja 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $drugaBoja 0%,
+    $drugaBoja 50%,
+    $drugaBoja 51%,
+    $drugaBoja 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $drugaBoja 0%,
+    $drugaBoja 50%,
+    $drugaBoja 51%,
+    $drugaBoja 100%
+  );
+}
+
+@mixin boxshadow() {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}

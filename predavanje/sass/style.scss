@@ -1,0 +1,39 @@
+@import "variables.scss";
+@import "extends.scss";
+@import "mixins.scss";
+
+.tekst {
+  color: $primary-color;
+  font-family: $font;
+  box-shadow: $light-shadow;
+  @include gradient(#fff);
+
+  &:hover {
+    color: yellow;
+
+    span {
+      font-size: 22px;
+    }
+  }
+  span {
+    color: $red-color;
+
+    &:hover {
+      color: orange;
+    }
+  }
+}
+
+.uspesno {
+  margin: 20px 0px;
+  border: 1px solid green;
+  @extend %success;
+  @include boxshadow();
+}
+
+.neuspesno {
+  margin: 20px 0px;
+  border: 1px solid red;
+  @extend %alert;
+  @include boxshadow();
+}

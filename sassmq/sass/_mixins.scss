@@ -1,0 +1,25 @@
+@mixin shadow($shadow, $color: gray, $left: 0px) {
+  -webkit-box-shadow: $left 0px $shadow 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: $left 0px $shadow 0px rgba(0, 0, 0, 0.75);
+  box-shadow: $left 0px $shadow 0px rgba(0, 0, 0, 0.75);
+
+  border: 1px solid gray;
+  color: blue;
+  padding: 5px;
+}
+
+@mixin responsive($width) {
+  @if $width == small-screen {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  } @else if $width == medium-screen {
+    @media screen and (max-width: 801px) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
