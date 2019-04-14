@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="forma">
+        <div class="input-group">
+          <input placeholder="Ime" type="text" name="Ime" id="ime" required />
+        </div>
+        <div class="input-group">
+          <input
+            placeholder="Prezime"
+            type="text"
+            name="Prezime"
+            id="prezime"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            placeholder="Email"
+            type="email"
+            name="Email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <textarea
+            rows="10"
+            placeholder="Komentar"
+            name="Komentar"
+            id="komentar"
+          ></textarea>
+          <div class="counte">
+            <span id="current">0</span>/<span id="max">0</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="terms">Prihvatam uslove koriscenja</label>
+          <input type="checkbox" name="Accept" id="terms" required />
+        </div>
+
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+
+    <img
+      class="slika1"
+      data-modal="modal1"
+      src="https://via.placeholder.com/200"
+      alt="Slika"
+    />
+
+    <div class="modal" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="https://via.placeholder.com/200" alt="Slika" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus et rerum alias? Nihil consequuntur quis sapiente nam
+            recusandae et ipsum vel facilis, eius harum incidunt culpa impedit,
+            ratione ipsam explicabo.
+          </p>
+          <div class="modal-close">
+            <div class="close">Close modal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

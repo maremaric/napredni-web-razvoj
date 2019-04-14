@@ -1,0 +1,42 @@
+#forma {
+  padding: 40px 20px;
+  width: 300px;
+}
+
+#forma .input-group {
+  margin: 10px 0px;
+}
+
+#forma .input-group input,
+#forma .input-group textarea {
+  width: 100% !important;
+  padding: 5px 10px;
+  resize: vertical;
+}
+
+#forma input[type="submit"] {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.modal {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  margin: auto;
+  border: 1px solid black;
+  width: 100px;
+  cursor: pointer;
+}
+.close:hover {
+  background: blue;
+}
