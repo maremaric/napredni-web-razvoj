@@ -1,0 +1,40 @@
+$gray-border: 1px solid gray;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+
+  div {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+
+    ul {
+      border: 1px solid gray;
+      padding: 20px;
+
+      li {
+        border: 1px solid gray;
+        padding: 20px;
+
+        span {
+          border: $gray-border;
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .stars {
+    display: flex;
+    justify-content: center;
+    margin: 40vh 0vh;
+
+    i {
+      color: lightgrey;
+    }
+  }
+}

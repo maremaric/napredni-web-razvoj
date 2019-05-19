@@ -1,0 +1,33 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: black; }
+  html div,
+  body div {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px; }
+    html div ul,
+    body div ul {
+      border: 1px solid gray;
+      padding: 20px; }
+      html div ul li,
+      body div ul li {
+        border: 1px solid gray;
+        padding: 20px; }
+        html div ul li span,
+        body div ul li span {
+          border: 1px solid gray;
+          width: 100%;
+          display: block; }
+  html .stars,
+  body .stars {
+    display: flex;
+    justify-content: center;
+    margin: 40vh 0vh; }
+    html .stars i,
+    body .stars i {
+      color: lightgrey; }
+
+/*# sourceMappingURL=style.css.map */
