@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #panel {
+        height: 0px;
+        width: 400px;
+        transition: 0.3s ease;
+        background: gray;
+      }
+      #panel.open {
+        height: 300px;
+      }
+
+      #dimension {
+        padding: 10px;
+        border: 2px solid blue;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="html"><h2>Lorem</h2></div>
+    <div id="text">Lorem</div>
+    <input type="text" id="name" class="names" value="Dobrodosli" />
+    <input type="text" class="names" value="Dobrodosli" />
+    <input type="text" class="names" value="Dobrodosli" />
+    <input type="text" class="names" value="Dobrodosli" />
+
+    <button id="change">Izmeni</button>
+
+    <div id="container"></div>
+
+    <button id="add">Dodaj</button>
+
+    <ul class="lista">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <p id="info"></p>
+
+    <button id="addAppend">Append</button>
+    <button id="addPrepend">Prepend</button>
+    <button id="remove">Remove New</button>
+
+    <div id="panel"></div>
+
+    <button id="toggle">Toggle</button>
+
+    <div id="dimension"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
