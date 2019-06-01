@@ -1,0 +1,62 @@
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+.block2 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 0;
+  top: 40px;
+  background: #6060ff;
+}
+
+/* zadatak */
+
+.wrapper2 {
+  .block3 {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: #3498db;
+    box-shadow: inset 0px 0px 20px lightgray;
+
+    div {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 2;
+    }
+
+    div#prvi {
+      background: black;
+      top: 0;
+      left: 0;
+    }
+
+    div#drugi {
+      background: black;
+      top: 0;
+      left: 100px;
+    }
+
+    div#treci {
+      background: black;
+      top: 100px;
+      left: 0;
+    }
+
+    div#cetvrti {
+      background: black;
+      top: 100px;
+      left: 100px;
+    }
+  }
+}
