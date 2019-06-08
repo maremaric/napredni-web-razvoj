@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+  html .wrapper,
+  body .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #95a5a6;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    html .wrapper .content,
+    body .wrapper .content {
+      width: 700px;
+      height: 600px;
+      background-color: white;
+      position: relative; }
+      html .wrapper .content .status_header,
+      body .wrapper .content .status_header {
+        height: 60px;
+        background-color: #3498db;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: -60px;
+        width: 100%; }
+        html .wrapper .content .status_header #lifes,
+        body .wrapper .content .status_header #lifes {
+          padding: 0px 10px; }
+        html .wrapper .content .status_header .btn-group,
+        body .wrapper .content .status_header .btn-group {
+          padding: 0px 10px; }
+      html .wrapper .content #canvas,
+      body .wrapper .content #canvas {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        html .wrapper .content #canvas #fruit,
+        body .wrapper .content #canvas #fruit {
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0; }
+        html .wrapper .content #canvas #gameover,
+        body .wrapper .content #canvas #gameover {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 300px;
+          height: 200px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: lightgray; }
+
+/*# sourceMappingURL=style.css.map */
