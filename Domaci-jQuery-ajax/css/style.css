@@ -1,0 +1,34 @@
+img {
+  width: 100%;
+}
+
+#cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img-top {
+  position: relative;
+}
+.id {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#list-wrapper {
+  width: 250px;
+}
+
+.info {
+  width: 0px;
+  background-color: gray;
+  height: 0px;
+}
+
+.list {
+  display: flex;
+}
