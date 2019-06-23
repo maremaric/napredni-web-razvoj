@@ -40,19 +40,18 @@ body {
         position: absolute;
         width: 300px;
         height: 100%;
-        right: 0;
+        right: -300px;
         top: 0;
-        background: #00b4db; /* fallback for old browsers */
-        background: -webkit-linear-gradient(
-          to right,
-          #0083b0,
-          #00b4db
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(
-          to right,
-          #0083b0,
-          #00b4db
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #00b4db;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,
+            #0083b0,
+            #00b4db);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right,
+            #0083b0,
+            #00b4db);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         z-index: 888;
 
         #close-backdrower {
@@ -141,6 +140,7 @@ body {
         .wa-sections__wa-top {
           height: 400px;
           width: 100%;
+          position: relative;
 
           .left_info {
             padding: 20px 50px;
@@ -154,6 +154,7 @@ body {
             .left_info__current-date {
               font-size: 1.2rem;
             }
+
             .left_info__timeline {
               list-style: none;
               padding-left: 0;
@@ -181,7 +182,29 @@ body {
             margin-right: 60px;
             margin-top: 7vh;
 
-            .right_info__city-title {
+            .right_info__city-title {}
+          }
+
+          .search {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+
+            #search {
+              background-color: transparent;
+              border: 0;
+              border-bottom: 3px solid #fff;
+              color: #fff;
+              padding: 2px 3px;
+              font-size: 1.3rem;
+              outline: none;
+              text-align: center;
+              max-width: 150px;
+
+              &:placeholder {
+                color: rgba(255, 255, 255, 0.5);
+              }
             }
           }
         }
@@ -201,6 +224,13 @@ body {
               justify-content: space-evenly;
               align-items: center;
               height: 100%;
+              cursor: pointer;
+              transition: .2s ease;
+
+              &:hover {
+                background-color: $primary-color;
+
+              }
 
               .today__item__icon {
                 i {
